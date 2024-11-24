@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <None Remove="AccessRepository.cs~RF2183ad7.TMP" />
-    <None Remove="Repository\cfsktqux.511~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>

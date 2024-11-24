@@ -1,8 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using WON.Entities.Models;
-using WON.Services;
-using WON.Services.Repository;
+using WON.Services.RepositoryServices;
 using WON.System.Models;
 
 namespace WON.System.Controllers {

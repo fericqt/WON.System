@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WON.Entities.DBContext;
-using WON.Services;
-using WON.Services.Repository;
+using WON.Services.RepositoryServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
