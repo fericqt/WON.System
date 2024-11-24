@@ -40,29 +40,20 @@ namespace WON.System.Controllers {
         }
 
 
-        public IActionResult GetNames() {
-            var particiapnts = new List<ParticipantModel>() {
-                new ParticipantModel {
-                    Id = 1,
-                    Value = 1,
-                    Name = "Feric Decenan",
-                    Label = "Feric"
-                },
-                new ParticipantModel {
-                    Id = 2,
-                    Value = 2,
-                    Name = "Steven Decenan",
-                    Label = "Steven"
+        public async Task<IActionResult> GetNames() {
+            var participants = new List<ParticipantModel>();
+            var participantsEntities = await _accessRepository.ParticipantRepo.GetAllAsync();
 
-                },
-                new ParticipantModel {
-                    Id = 3,
-                    Value = 3,
-                    Name = "Angelo Jun Decenan",
-                    Label = "Angelo"
-                }
-            };
-            return Json(particiapnts);
+            foreach(var item in participantsEntities) {
+                participants.Add(new ParticipantModel {
+                    Name = $"{item.Firstname} {item.Middlename} {item.Lastname}",
+                    Label = $"{item.Firstname} {item.Middlename} {item.Lastname}",
+                    Value = 1,
+                    Id = 1,
+                });
+            }
+
+            return Json(participants);
         }
     }
     

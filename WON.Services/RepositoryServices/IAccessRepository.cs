@@ -5,5 +5,6 @@ namespace WON.Services.RepositoryServices {
     public interface IAccessRepository {
         IBaseRepository<Participant> ParticipantRepo { get; }
         IBaseRepository<Users> UsersRepo { get; }
+        IBaseRepository<Prizes> PrizesRepo { get; }
     }
 }

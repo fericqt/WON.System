@@ -13,9 +13,12 @@ namespace WON.Services.RepositoryServices {
         public AccessRepository(EntitiesDbContext dbContext) {
             ParticipantRepo = new BaseRepository<Participant, EntitiesDbContext>(dbContext);
             UsersRepo = new BaseRepository<Users, EntitiesDbContext>(dbContext);
+            PrizesRepo = new BaseRepository<Prizes, EntitiesDbContext>(dbContext);
         }
 
         public IBaseRepository<Participant> ParticipantRepo { get; private set; }
         public IBaseRepository<Users> UsersRepo { get; private set; }
+
+        public IBaseRepository<Prizes> PrizesRepo { get; private set; }
     }
 }

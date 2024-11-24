@@ -14,6 +14,7 @@ namespace WON.Entities.DBContext {
 
         public DbSet<Users> Users { get; set; }
         public DbSet<Participant> Participants { get; set; }
+        public DbSet<Prizes> Prizes { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
