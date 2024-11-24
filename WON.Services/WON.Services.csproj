@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AccessRepository.cs~RF2183ad7.TMP" />
+    <None Remove="Repository\cfsktqux.511~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FerPROJ.Base.ASP\FerPROJ.Base.ASP\FerPROJ.Base.ASP.csproj" />
+    <ProjectReference Include="..\WON.Entities\WON.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
